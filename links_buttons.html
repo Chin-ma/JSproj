@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseuudo selctors and more designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: turquoise;
+            padding: 34px;
+            margin: 34px;
+            width: 666px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(109, 14, 14);
+            background-color: burlywood;
+        }
+        a:visited{
+            background-color: chartreuse;
+
+        }
+        a:active{
+            color: rgb(240, 6, 6);
+
+        }
+        .btn{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            background-color: violet;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: salmon;
+            background-color: thistle;
+            border: 5px solid rgb(red, green, rgb(68, 1, 253));
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus hic, dolore expedita recusandae reiciendis atque? Quidem, eos eligendi ipsam beatae ad rerum nisi tempore autem sed deleniti quibusdam nostrum!</p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

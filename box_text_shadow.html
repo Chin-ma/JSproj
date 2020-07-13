@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            border-radius: 20px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            /* box-shadow: 10px 10px green; */
+            /* box-shadow: -10px -10px green; */
+            /* box shadow offset-x offset-y blur-radius spread-radius */
+            /* box-shadow: 7px 5px 10px 25px green */
+            box-shadow: inset 3px 5px greenyellow;
+        
+
+        }
+        .card h2{
+            /* text-shadow: 3px 4px rgb(36, 225, 250); */
+            /* text-shadow: 3px 2px 10px rgb(36, 225, 250); */
+            text-shadow: -3px -2px 10px rgb(36, 225, 250);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>
+                This is cpp course
+            </h2>
+            <p> THis is c++ course and will do it Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero numquam, consectetur deserunt earum placeat perferendis eligendi nobis nemo sequi quaerat quos aspernatur quae eveniet et, in commodi eos iusto totam optio cumque laborum asperiores.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>
+                This is html course
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut minima qui repellat eveniet corporis illo voluptates praesentium molestias rerum, unde ab quos earum tenetur placeat labore fugit! Animi hic velit magnam praesentium fugit minima.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>
+                Card3
+            </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A aliquid ut atque inventore quos culpa recusandae aut possimus explicabo, consectetur quas deserunt vero odio et tempora accusamus voluptas animi. Accusantium nostrum impedit doloremque qui!</p>
+        </div>
+    </div>
 </body>
 </html>

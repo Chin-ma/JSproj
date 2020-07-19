@@ -17,7 +17,11 @@
     margin-bottom: 10px;
     margin-left: 55px;
     display: inline-block;
-
+    transition: all 0.5s ease-in-out;
+}
+#logo img:hover{
+    transform: rotate(360deg);
+    
 }
 #navbar{
     position: absolute;
@@ -53,13 +57,14 @@
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+    font-size: 1.5rem;
 }
 
 #home{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 1120px;
+    height: 794px;
     justify-content: center;
     align-items: center;
 
@@ -80,8 +85,8 @@
     color: white;
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Patua One', cursive;
-
+    font-family: 'Fondamento', cursive;
+    font-weight: bold;
 }
 #home h1{
     color: white;
@@ -125,6 +130,11 @@
     background-color: burlywood;
     
 }
+#services .box:hover{
+    box-shadow: 5px 5px red;
+    background-color: rgb(248, 179, 88);
+    
+}
 #services .box img{
     height: 160px;
     margin: auto;
@@ -142,7 +152,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 40%;
+    height: 61%;
     z-index: -1;
     opacity: 0.4;
     background: url('./contactus.png') no-repeat center center/cover;
@@ -185,6 +195,9 @@ footer{
     /* color: white; */
     font-family: 'Patua One', cursive;
 }
+/*.h-primary:hover{
+    color: rgb(7, 146, 226);
+}*/
 .h-secondary{
     font-size: 2.11rem;
     padding: 12px;
@@ -200,6 +213,13 @@ footer{
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: red;
+    color: burlywood;
+    box-shadow: inset 5px 5px burlywood
+    ;
 }
 .center{
     text-align: center;

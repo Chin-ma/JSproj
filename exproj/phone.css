@@ -13,7 +13,7 @@
 }
 /* Home section */
 #home{
-    height: 427px;
+    height: 285px;
     /* flex-direction: column; */
     padding: 3px 68px;
 }
@@ -27,9 +27,12 @@
 /* Services section */
 #services{
     flex-direction: column;
+    margin: 50px;
+    
 }
 #services .box{
     /* font-size: ; */
+    
 }
 
 /* Clients section */

@@ -1,12 +1,13 @@
 .navbar{
     display: flex;
     align-items: center;
+    background: url('./wood-panel-texture-5.jpg');
 }
 .navbar ul{
     display: flex;
 }
 .navbar ul li a{
-    /* color: white; */
+    color: white;
     padding: 3px 22px;
     display: block;
     text-decoration: none;
@@ -34,17 +35,26 @@
     align-items: center;
     justify-content: center;
     /* border-radius: 20px; */
+    padding: 10px 10px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
 }
 .comp{
     display: flex;
     background-color: burlywood;
     font-size: 100px;
-    height: 1000px;
+    height: 841px;
     width: 100%;
     align-items: center;
     justify-content: center;
-    color: crimson;
-    border-radius: 20px;
+    color: red;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 34px;
+    margin: 3px 6px;
 }
 .comp:hover{
     font-size: 150px;
@@ -52,14 +62,15 @@
 
 .food{
     display: flex;
-    background-color: crimson;
+    background-color: red;
     font-size: 100px;
-    height: 1000px;
+    height: 841px;
     width: 100%; 
     align-items: center;  
     justify-content: center;
     color: burlywood;
-    border-radius: 20px;
+    border-radius: 30px;
+    box-sizing: border-box;
 }
 .food:hover{
     font-size: 150px;

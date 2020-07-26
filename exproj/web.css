@@ -1,0 +1,66 @@
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li a{
+    /* color: white; */
+    padding: 3px 22px;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: cursive;
+}
+.navbar::before{
+    content: "";
+    /* background: url('./wood-panel-texture-5.jpg'); */
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 20px; */
+}
+.comp{
+    display: flex;
+    background-color: burlywood;
+    font-size: 100px;
+    height: 1000px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+    border-radius: 20px;
+}
+.comp:hover{
+    font-size: 150px;
+}
+
+.food{
+    display: flex;
+    background-color: crimson;
+    font-size: 100px;
+    height: 1000px;
+    width: 100%; 
+    align-items: center;  
+    justify-content: center;
+    color: burlywood;
+    border-radius: 20px;
+}
+.food:hover{
+    font-size: 150px;
+}

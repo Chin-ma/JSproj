@@ -44,7 +44,8 @@
 }
 .comp{
     display: flex;
-    background-color: burlywood;
+    /* background-color: burlywood; */
+    background: url('./Azure_Kinect_24-1000x667.jpg') no-repeat center center/cover;
     font-size: 100px;
     height: 841px;
     width: 100%;
@@ -55,23 +56,34 @@
     box-sizing: border-box;
     padding: 34px;
     margin: 3px 6px;
+    opacity: 0.4;
+    /* z-index: -1; */
+    /* position: relative; */
 }
 .comp:hover{
     font-size: 150px;
+    height: 1000px;
+    width: 200%;
 }
 
 .food{
     display: flex;
-    background-color: red;
+    /* background-color: red; */
+    background: url('./sada-bhajni-chakli-500x500.jpg') no-repeat center center/cover;
     font-size: 100px;
     height: 841px;
     width: 100%; 
     align-items: center;  
     justify-content: center;
-    color: burlywood;
+    color: red;
     border-radius: 30px;
     box-sizing: border-box;
+    opacity: 0.4;
+    /* z-index: -1; */
+    /* position: relative; */
 }
 .food:hover{
     font-size: 150px;
+    height: 1000px;
+    width: 200%;
 }

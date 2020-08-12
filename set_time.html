@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js setTime and clear time</title>
+</head>
+<body>
+    <div class="container">
+        The time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log('This is a tutorial for setTime amd clearTIme')
+        // setTimeout - Allows us to run the function once after the interval of time
+        // clearTimeout - Allows us to run the function repeatedly after the interval of time4
+
+        function greet(name, byetext){
+            console.log("Hello Good Morning" + name + " " + byetext)
+        }
+        // timeOut = setTimeout(greet, 5000, " Chinmay" , "Take care")
+        // console.log(timeOut)
+        // clearTimeout(timeOut)
+
+    //    IntervalId = setInterval(greet, 2000, " Chinmay", "Hello good night")
+    //    clearInterval(IntervalId)
+
+    function displayTime(){
+        time = new Date()
+        console.log(time)
+        document.getElementById('time').innerHTML = time
+    }
+    setInterval(displayTime, 1000)
+
+    </script>
+</body>
+</html>

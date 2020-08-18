@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <style>
+        .container{
+            padding: 20px;
+            border-radius: 4px;
+            max-width: 100%;
+            width: 350px;
+            background: rgb(247, 175, 104);
+        }
+
+        h2{
+            text-align: center;
+        }
+        form{
+            display: grid;
+            grid-template-columns: lfr auto;
+            grid-gap: 8px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        #listitem{
+            border: none;
+            font-family: inherit;
+            border-bottom: 2px solid red;
+            font-size: inherit;
+            padding: 0px 10px;
+            transition: 0.6s;
+        }
+        #listitem:focus{
+            outline: 0;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+        #add{
+            padding: 5px 30px;
+            font-family: inherit;
+            background: lawngreen;
+            border-radius: 20px;
+            border: none;
+            font-size: inherit;
+        }
+        #list{
+            list-style-type: none;
+            margin-left: -30px;
+        }
+        #list>li:nth-child(odd){
+            padding: 4px 10px;
+            background: lavenderblush;
+        }
+        #list>li:nth-child(even){
+            padding: 4px 10px;
+            background: rgb(238, 16, 90);
+        }
+        .close{
+            position: relative;
+            float: right;
+            margin-right: 10px;
+            background: none;
+            font-size: 1.2rem;
+            border: none;
+        }
+        .close:hover{
+            color: blue;
+        }
+
+    </style>
+    <script>
+        let add = document.querySelector('#add')
+            let list = document.querySelector('#list')
+            add.onclick = (e) => {
+                e.preventDefault()
+                let listitem = document.querySelector('#listitem')
+                if(listitem.value !== ''){
+                    let el = document.createElement('li')
+                    el.innerHTML = listitem.value
+                    let removeBtn = document.createElement('button')
+                    removeBtn.className = 'close'
+                    removeBtn.innerHTML = '\u00D7'
+                    el.appendChild(el)
+                    listitem.value = ""
+                    el,addEventListener("click", (e) => {
+                        e.target.style.textDecoration = "line-through"
+                    })
+                    removeBtn.addEventListener("click", (e) => {
+                        e.target.parentElement.style.display = 'none'
+                    })
+                }
+            }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form>
+            <input type="text" id="listitem" autocomplete="off" placeholder="Add Item">
+            <button id="add">Add</button>
+        </form>
+        <ul id="list"></ul>
+    </div>
+    
+</body>
+</html>
